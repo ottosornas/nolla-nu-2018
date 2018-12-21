@@ -1,0 +1,110 @@
+.page {
+	text-align: center;
+    font-family: 'Special Elite'; font-size: 18px;
+	background-color: black;
+	color: pink;
+}
+
+.button {
+	background-color: black;
+	border: 3px solid pink;
+	width: 500px;
+	float: center;
+	cursor: pointer;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	margin: auto 3vw 5vh 3vw;
+	padding: 0.8em 1.2em;
+	transition-duration: 0.4s;
+	text-decoration: none;
+	color: pink;
+}
+
+.button:hover {
+    background-color: pink;
+    border: 3px solid pink;
+	color: black;
+}
+
+.mainheader {
+	font-size: 72px;
+	display: inline-block;
+}
+
+.centered {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+}
+
+@keyframes flickerAnimation {
+	0%   { opacity:1; }
+	50%  { opacity:0; }
+	100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+	0%   { opacity:1; }
+	50%  { opacity:0; }
+	100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+	0%   { opacity:1; }
+	50%  { opacity:0; }
+	100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+	0%   { opacity:1; }
+	50%  { opacity:0; }
+	100% { opacity:1; }
+  }
+  .animate-flicker {
+	-webkit-animation: flickerAnimation 1s infinite;
+	-moz-animation: flickerAnimation 1s infinite;
+	-o-animation: flickerAnimation 1s infinite;
+	animation: flickerAnimation 1s infinite;
+	-webkit-box-shadow: 0px 0px 5px pink;
+	-moz-box-shadow: 0px 0px 5px pink;
+	box-shadow: 0px 0px 5px pink;
+	width: 16px;
+	height: 56px;
+	background-color: pink;
+	display: inline-block;
+  }
+
+
+@media screen and (max-width: 500px) {
+
+	.mainheader {
+		font-size: 50px;
+		display: inline-block;
+	}
+
+	.animate-flicker {
+		-webkit-animation: flickerAnimation 1s infinite;
+		-moz-animation: flickerAnimation 1s infinite;
+		-o-animation: flickerAnimation 1s infinite;
+		animation: flickerAnimation 1s infinite;
+		-webkit-box-shadow: 0px 0px 5px pink;
+		-moz-box-shadow: 0px 0px 5px pink;
+		box-shadow: 0px 0px 5px pink;
+		width: 16px;
+		height: 44	px;
+		background-color: pink;
+		display: inline-block;
+	  }
+
+  	.button {
+		background-color: black;
+		border: 3px solid pink;
+		width: 78vw;
+		color: pink;
+		float: center;
+		cursor: pointer;
+		font-size: 16px;
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		margin: auto 3vw 5vh 3vw;
+		padding: 0.8em 1.2em;
+		transition-duration: 0.4s;
+	}
+}

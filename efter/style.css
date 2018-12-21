@@ -1,0 +1,476 @@
+body {
+    height: 100vh;
+}
+body {
+    min-height: 100vh;
+}
+.page {
+	text-align: center;
+	font-family: 'Raleway'; font-size: 18px;
+}
+
+.navbar-fixed-top {
+	position: fixed;
+	height: 55px;
+	font-size: 20px;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-bottom: 1px solid #777;
+}
+
+.dropdown {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.dropdown .navbar-btn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    padding: 4px 16px 20px;
+    background-color: inherit;
+}
+
+.navbar-btn:hover {
+	color: pink;
+	text-decoration: none;
+}
+
+.dropdown-content {
+	opacity: 0;
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-top: 1px solid pink;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+    margin-top: -13px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: gray;
+    color: pink;
+}
+
+.dropdown:hover .dropdown-content {
+	position: fixed;
+  	opacity: 1;
+  	color: pink;
+  	transition: opacity 0.3s linear;
+}
+
+.bgimg-1 {
+    background-image: url("img/stab.jpg");
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-2 {
+    background-image: url("img/stab2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    min-height: 100vh;
+    padding-top: 40vh;
+}
+
+.btn-container {
+	float: bottom;
+	position: relative;
+	top: 85vh;
+	left: 50vw;
+	margin-left: -50px;
+}
+
+.btn-top {
+	display:block;
+	position: relative;
+	background-color: rgba(255, 182, 193, 0.5);
+	color: rgba(0, 0, 0, 0.2);
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	cursor: pointer;
+	border: 0px solid;
+	outline: none;
+}
+
+.btn-top:hover {
+	background-color: white;
+	color: pink;
+	transition: background-color 500ms ease-in-out, color 150ms ease-in-out;
+}
+
+.flex-container {
+	display: flex;
+}
+
+.larger {
+	font-size: 90px;
+	flex: 1 auto;
+}
+
+.info-section {
+	width: 50vw;
+	margin-top: 10vh;
+	margin-left: 25vw;
+	border-bottom: 2px solid black;
+}
+
+.staben {
+    text-align: center;
+    margin: 36vh auto 1em auto;
+}
+
+.stab-member {
+	display: inline-block;
+	margin: 10vh 1.5vw auto 1.5vw;
+}
+
+.img-circle {
+    border-radius: 50%;
+    max-height: 12vw;
+}
+
+.schedule {
+	margin: 35vh auto auto auto;
+	max-width: 70vw;
+}
+
+.schedule-buttons {
+	background-color: white;
+	border: 3px solid #555555;
+	width: 500px;
+	color: black;
+	display: inline-block;
+	float: center;
+	cursor: pointer;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	margin: 10vh 3vw 5vh 3vw;
+	padding: 0.8em 1.2em;
+	transition-duration: 0.4s;
+
+}
+
+.schedule-buttons:hover {
+    background-color: #555555;
+    border: 3px solid #555555;
+    color: white;
+}
+
+.nolleguiden, .sponsorer {
+	margin-top: 35vh;
+}
+
+.sponsor {
+	text-align: left;
+	overflow: hidden;
+	width: 25vw;
+	height: 25vw;
+	padding-bottom: 6vh;
+	display: inline-block;
+	vertical-align: top;
+}
+
+img {
+	max-height: 25vw;
+   max-width: 25vw;
+  object-fit: contain;
+}
+
+.flag-container {
+	display: inline-block;
+	position: relative;
+	bottom: 3.3vh;
+	left: 10vw;
+	color: white;
+}
+
+
+.flag {
+    background-size: contain;
+  	background-position: 50%;
+  	background-repeat: no-repeat;
+  	position: relative;
+  	display: inline-block;
+  	width: 1.33333333em;
+  	line-height: 1em;
+}
+
+.flag:hover {
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+.flag.flag-gb {
+  background-image: url(img/gb.svg);
+}
+
+.flag.flag-se {
+  background-image: url(img/se.svg);
+}
+
+
+.info-main {
+	width: 60vw;
+	min-height: 50vh;
+	background-color: white;
+	margin: auto 20vw auto 20vw;
+	position: relative;
+	float: center;
+	padding-right: 3vw;
+	padding-left: 3vw;
+	padding-top: 3vh;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.subsection {
+	text-align: left;
+	padding-left: 1vw;
+	padding-bottom: 3vh;
+	padding-top: 1vh;
+}
+
+.subsection-2 {
+	padding-bottom: 5vh;
+	padding-top: 1vh;
+	padding-left: 1vw;
+	text-align: left;
+}
+
+.padded-bottom {
+	margin-top: 2vh;
+	color: transparent;
+}
+
+.link-button {
+	padding: 0.8em 1.2em;
+	width: 15vw;
+	cursor: pointer;
+	border: 3px solid #555555;
+	background-color: white;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	color: black;
+	transition-duration: 0.4s;
+	float: left;
+}
+
+.link-button:hover {
+	background-color: #555555;
+	border: 3px solid #555555;
+	color: white;
+}
+
+.link-section {
+	display: inline-block;
+	margin-top: 5vh;
+	width: 50vw;
+}
+
+.link-description {
+	overflow: hidden;
+	text-align: left;
+	width: 30vw;
+	padding-bottom: 6vh;
+	padding-left: 3vw;
+}
+
+.link-end {
+	overflow: hidden;
+	text-align: left;
+	width: 30vw;
+	padding-bottom: 6vh;
+	padding-left: 3vw;
+}
+
+.mobile-only {
+	display: none;
+}
+
+@media screen and (max-width: 500px) {
+	.mobile-only {
+		display: block !important;
+		min-width: 100vw;
+	}
+
+	.bgimg-1 {
+		background-image: url("img/stab2.jpg");
+		height: 100vh;
+		position: relative;
+		background-attachment: fixed;
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.btn-container {
+		float: bottom;
+		position: relative;
+		top: 85vh;
+		left: 50vw;
+		margin-left: -30vw;
+	}
+
+	.info-section {
+		width: 90vw;
+		margin-top: 10vh;
+		margin-left: auto;
+		margin-right: auto;
+		border-bottom: 2px solid black;
+	}
+
+	.stab-member {
+		display: block;
+		margin: 10vh 1.5vw auto 1.5vw;
+	}
+
+	.img-circle {
+	    border-radius: 50%;
+	    max-width: 90vw;
+	    max-height: 50vh;
+	}
+
+	.info-main {
+		width: 90vw;
+		background-color: white;
+		margin: 20vh 5vw auto 5vw;
+		position: relative;
+		float: center;
+		padding-right: 3vw;
+		padding-left: 3vw;
+		padding-top: 3vh;
+	}
+
+	.btn-container {
+		float: bottom;
+		position: relative;
+		top: 85vh;
+		left: -30vw;
+	}
+
+	.padded-bottom {
+		color: transparent;
+	}
+
+	.navbar-fixed-top, .dropdown {
+		visibility: hidden;
+	}
+
+	.dropdown-mobile {
+		overflow: hidden;
+		float: right;
+    	display: inline-block !important;
+    	z-index: 999;
+	}
+
+	.dropdown-content-mobile {
+		display: none;
+	    position: absolute;
+	    float: left;
+	    left: 0;
+	    background-color: #f9f9f9;
+	    opacity: 0.9;
+	    min-width: 100vw;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+
+	.dropdown-content-mobile a {
+		left: 0;
+	    color: black;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	    text-align: left;
+	    }
+
+	.dropdown-btn {
+		font-size: 16px;
+	    border: none;
+	    outline: none;
+	    color: white;
+	    font-size: 20px;
+	    padding: 10px 10px 10px 10px;
+	    background-color: rgba(0, 0, 0, 0.6);
+	}
+
+	.schedule {
+		margin: 35vh auto auto auto;
+		min-width: 90vw;
+	}
+
+	.schedule-buttons, .link-button {
+		background-color: white;
+		border: 3px solid #555555;
+		width: 78vw;
+		color: black;
+		float: center;
+		cursor: pointer;
+		text-align: center;
+		font-size: 16px;
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		margin: auto 3vw 5vh 3vw;
+		padding: 0.8em 1.2em;
+		transition-duration: 0.4s;
+
+	}
+
+	.link-description {
+		overflow: hidden;
+		text-align: left;
+		width: 78vw;
+		margin-bottom: 6vh;
+		padding-left: 3vw;
+		margin-left: 3vw;
+		border-bottom: 1px solid black;
+	}
+
+	.link-section {
+		display: inline-block;
+		margin-top: 5vh;
+		width: 90vw;
+	}
+
+	.link-end {
+		overflow: hidden;
+		text-align: left;
+		width: 78vw;
+		margin-bottom: 6vh;
+		padding-left: 3vw;
+		margin-left: 3vw;
+	}
+
+	.flag-mobile {
+		border: none;
+		outline: none;
+		position: absolute;
+	    float: left;
+	    left: 0;
+	    background-color: rgba(0, 0, 0, 0.6);
+	    opacity: 0.9;
+	    font-size: 20px;
+	    padding: 10px 10px 10px 10px;
+	    z-index: 1;
+
+	}
+
+	.flag-mobile a {
+		text-decoration: none;
+		color: white;
+	}
+}
